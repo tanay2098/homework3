@@ -5,11 +5,14 @@ total_gallons=0
 total_miles=0
 total_mpg=0
 
-
 gallons_used=float(input('Enter the gallons used (-1 to end): '))
+while(gallons_used==0 or gallons_used<=-2):
+    gallons_used=float(input('Please enter a valid value: '))
 
 if(gallons_used!=-1):
-    miles=float(input("Enter the miles driven: "))
+    miles=float(input('Enter the miles driven: '))
+while(miles<=0):
+    miles=float(input('Please enter a valid value: '))
 
 while(gallons_used!=-1):
 
