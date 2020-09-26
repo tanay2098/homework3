@@ -29,6 +29,8 @@ while(gallons_used!=-1):
     if(gallons_used!=-1):
 
         miles=float(input("Enter the miles driven: "))#taking user input for miles
+        while(miles<=0):#Loop to check and validate user input
+            miles=float(input('Please enter a valid value: '))
     else:
         avg=total_miles/total_gallons#Calculating the total average
         print('The overall average miles/gallon was: ',+ avg)
